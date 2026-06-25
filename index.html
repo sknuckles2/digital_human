@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数字人终端</title>
+    <style>
+      /* 加载中快速闪现的初始样式 — 防止白屏 */
+      html, body { margin: 0; padding: 0; height: 100%; background: #0a0a0f; color: #e0e0f0; font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Noto Sans CJK SC', sans-serif; }
+      #root { height: 100%; }
+      .init-loading {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        height: 100%; font-family: sans-serif; gap: 16px;
+      }
+      .init-loading .spinner {
+        width: 40px; height: 40px; border: 3px solid #2a2a3a;
+        border-top-color: #6c8cff; border-radius: 50%; animation: spin 1s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .init-loading p { color: #8888aa; font-size: 14px; margin: 0; }
+    </style>
+    <!-- Live2D Cubism 4 Core SDK — 必须在主应用之前加载 -->
+    <script src="/live2dcubismcore.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="init-loading">
+        <div class="spinner"></div>
+        <p>数字人终端启动中...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+[2026-06-25T10:15:07.247Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T10:15:07.248Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T10:19:17.082Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T15:26:08.333Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:41:47.211Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:41:47.211Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T15:41:47.211Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T15:41:47.211Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T15:41:47.212Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:45:34.397Z] [INFO] [TTS] edge-tts Vivian '（看到数字愣了一下，然后露出恍然大悟的表情）
+
+啊！你又在玩...'
+[2026-06-25T15:45:36.497Z] [WARN] [TTS] Traceback (most recent call last):
+[2026-06-25T15:45:36.498Z] [WARN] [TTS] File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\Scripts\edge-tts.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 141, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 136, in amain
+    await _run_tts(args)
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 50, in _run_tts
+    communicate = Communicate(
+        args.text,
+    ...<4 lines>...
+        proxy=args.proxy,
+    )
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\communicate.py", line 342, in __init__
+    self.tts_config = TTSConfig(voice, rate, volume, pitch, boundary)
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 8, in __init__
+[2026-06-25T15:45:36.498Z] [WARN] [TTS] File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 69, in __post_init__
+    self.validate_string_param(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "voice",
+        ^^^^^^^^
+        self.voice,
+        ^^^^^^^^^^^
+        r"^Microsoft Server Speech Text to Speech Voice \(.+,.+\)$",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 40, in validate_string_param
+    raise ValueError(f"Invalid {param_name} '{param_value}'.")
+ValueError: Invalid voice 'Vivian'.
+[2026-06-25T15:45:36.535Z] [ERROR] [TTS] edge-tts exited with code 1
+[2026-06-25T15:46:33.127Z] [INFO] [ASR] 收到 1KB 音频
+[2026-06-25T15:46:33.139Z] [ERROR] [ASR] 返回 422: {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+[2026-06-25T15:47:39.135Z] [INFO] [TTS] edge-tts Vivian '啊～原来是测试哦！（松了一口气，又有点小得意）
+
+害我想那么...'
+[2026-06-25T15:47:40.034Z] [WARN] [TTS] Traceback (most recent call last):
+[2026-06-25T15:47:40.035Z] [WARN] [TTS] File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\Scripts\edge-tts.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 141, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 136, in amain
+    await _run_tts(args)
+[2026-06-25T15:47:40.035Z] [WARN] [TTS] File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 50, in _run_tts
+    communicate = Communicate(
+        args.text,
+    ...<4 lines>...
+        proxy=args.proxy,
+    )
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\communicate.py", line 342, in __init__
+    self.tts_config = TTSConfig(voice, rate, volume, pitch, boundary)
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 8, in __init__
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 69, in __post_init__
+    self.validate_string_param(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "voice",
+        ^^^^^^^^
+        self.voice,
+        ^^^^^^^^^^^
+        r"^Microsoft Server Speech Text to Speech Voice \(.+,.+\)$",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 40, in validate_string_param
+    raise ValueError(f"Invalid {param_name} '{param_value}'.")
+ValueError: Invalid voice 'Vivian'.
+[2026-06-25T15:47:40.069Z] [ERROR] [TTS] edge-tts exited with code 1
+[2026-06-25T15:53:44.360Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T15:53:44.379Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T15:53:54.236Z] [INFO] [ASR] 收到 90KB 音频
+[2026-06-25T15:53:54.255Z] [ERROR] [ASR] 返回 422: {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+[2026-06-25T15:54:03.978Z] [INFO] [ASR] 收到 2KB 音频
+[2026-06-25T15:54:03.982Z] [ERROR] [ASR] 返回 422: {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+[2026-06-25T15:54:44.345Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T15:54:44.391Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T15:57:27.472Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T15:58:39.319Z] [INFO] [ASR] 收到 1KB 音频 (webm)
+[2026-06-25T15:58:54.930Z] [INFO] [ASR] 收到 1KB 音频 (webm)
+[2026-06-25T15:59:09.326Z] [ERROR] [ASR] 请求失败: The operation was aborted due to timeout
+[2026-06-25T15:59:24.933Z] [ERROR] [ASR] 请求失败: The operation was aborted due to timeout
+[2026-06-25T15:59:45.229Z] [INFO] [TTS] edge-tts Serena '（看到熟悉的数字，眼睛一亮，笑眯眯地凑过来）欸！又来啦？上次...'
+[2026-06-25T15:59:46.175Z] [WARN] [TTS] Traceback (most recent call last):
+[2026-06-25T15:59:46.176Z] [WARN] [TTS] File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\Scripts\edge-tts.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 141, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 136, in amain
+    await _run_tts(args)
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\util.py", line 50, in _run_tts
+    communicate = Communicate(
+        args.text,
+    ...<4 lines>...
+        proxy=args.proxy,
+    )
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\communicate.py", line 342, in __init__
+    self.tts_config = TTSConfig(voice, rate, volume, pitch, boundary)
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 8, in __init__
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 69, in __post_init__
+    self.validate_string_param(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "voice",
+        ^^^^^^^^
+        self.voice,
+        ^^^^^^^^^^^
+        r"^Microsoft Server Speech Text to Speech Voice \(.+,.+\)$",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\5600X\AppData\Roaming\Python\Python314\site-packages\edge_tts\data_classes.py", line 40, in validate_string_param
+    raise ValueError(f"Invalid {param_name} '{param_value}'.")
+ValueError: Invalid voice 'Serena'.
+[2026-06-25T15:59:46.212Z] [ERROR] [TTS] edge-tts exited with code 1
+[2026-06-25T15:59:53.824Z] [INFO] [ASR] 收到 2KB 音频 (webm)
+[2026-06-25T16:00:14.870Z] [ERROR] [ASR] 返回 503: {"detail":"Model not loaded: An error happened while trying to locate the files on the Hub and we ca
+[2026-06-25T16:01:46.820Z] [INFO] [ASR] 收到 1KB 音频 (webm)
+[2026-06-25T16:01:57.350Z] [INFO] [ASR] 收到 1KB 音频 (webm)
+[2026-06-25T16:02:07.876Z] [ERROR] [ASR] 返回 503: {"detail":"Model not loaded: An error happened while trying to locate the files on the Hub and we ca
+[2026-06-25T16:02:27.352Z] [ERROR] [ASR] 请求失败: The operation was aborted due to timeout
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:08:05.700Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:19:32.936Z] [INFO] [ASR] 收到 2KB 音频 (webm)
+[2026-06-25T16:19:34.215Z] [INFO] [ASR] 识别: ''
+[2026-06-25T16:19:47.696Z] [INFO] [ASR] 收到 1KB 音频 (webm)
+[2026-06-25T16:19:47.888Z] [INFO] [ASR] 识别: ''
+[2026-06-25T16:19:58.352Z] [INFO] [ASR] 收到 2KB 音频 (webm)
+[2026-06-25T16:19:58.560Z] [INFO] [ASR] 识别: ''
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:25:27.742Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:29:21.103Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:29:22.411Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:30:02.468Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:30:22.390Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:31:02.469Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:33:17.593Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:33:17.594Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:33:18.872Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:33:54.899Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:34:18.861Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:34:54.901Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:35:31.968Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:35:31.969Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:35:31.969Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:35:31.969Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:35:31.969Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:35:33.233Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:35:36.052Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:36:33.216Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:36:36.065Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:41:52.082Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:41:52.083Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:41:53.363Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:41:55.742Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:43:05.858Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:43:07.159Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:43:10.818Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:44:07.136Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:44:10.828Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:45:02.144Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:45:03.453Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:45:09.842Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:45:48.656Z] [INFO] [LOGS] 新客户端连接 (共 3 个)
+[2026-06-25T16:46:03.439Z] [INFO] [LOGS] 客户端断开 (剩余 2 个)
+[2026-06-25T16:46:09.846Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:46:48.670Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:47:56.656Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:47:58.006Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:48:09.360Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:48:57.988Z] [INFO] [LOGS] 客户端断开 (剩余 1 个)
+[2026-06-25T16:49:17.483Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:49:17.484Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:18.656Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:49:20.433Z] [INFO] [LOGS] 新客户端连接 (共 2 个)
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:49:34.356Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:49:35.514Z] [INFO] [LOGS] 新客户端连接 (共 1 个)
+[2026-06-25T16:50:35.494Z] [INFO] [LOGS] 客户端断开 (剩余 0 个)
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   Orchestrator :6080
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   TTS          Edge-TTS (内置)
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   ASR          http://127.0.0.1:6090
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE] ═══════════════════════════════════════
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   POST /tts     — 语音合成
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   POST /asr     — 语音识别
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   GET  /voices  — 音色列表
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   GET  /health  — 健康检查
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE]   GET  /logs    — 日志流 (SSE)
+[2026-06-25T16:55:14.083Z] [INFO] [SERVICE] ═══════════════════════════════════════

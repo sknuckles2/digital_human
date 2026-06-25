@@ -1,0 +1,36 @@
+default_model = "deepseek/deepseek-v4-flash"
+[permissions]
+allow = ["Bash(wsl ls -la /home/sam/digital_human/digital-human-terminal/ 2>$null)", "Bash(wsl ls:*)", "Bash(wsl cat:*)", "Bash(# 复制所有文件（排除 node_modules、.git 和大zip包）\nwsl bash -c \"cd /home/sam/digital_human/digital-human-terminal && find . -not -path './node_modules/*' -not -path './.git/*' -not -name 'digital-human-terminal.zip' -not -path './dist/*' | tar -c -T -\" | pwsh -c \"tar -xf - 2>&1\")", "Bash(# 直接通过 WSL 的 /mnt/c 路径复制\nwsl bash -c \"cd /home/sam/digital_human/digital-human-terminal && cp -r .gitignore index.html package.json package-lock.json tsconfig.json tsconfig.node.json vite.config.ts src public electron scripts /mnt/c/projects/avatar/ 2>&1\")", "Bash(# 检查复制结果\nls -la)", "Bash(# 复制 dist 文件夹（已编译输出）\nwsl bash -c \"cd /home/sam/digital_human/digital-human-terminal && cp -r dist /mnt/c/projects/avatar/ 2>&1\")", "Bash(# 检查 dist 是否已复制\nTest-Path dist)", "Bash(# 检查子目录结构\nGet-ChildItem -Recurse -Depth 2 -Name | Select-Object -First 40)", "Bash(npm install:*)", "Bash(npx tsc:*)", "Bash(npm run build 2>&1)", "Bash(npm run electron 2>&1)", "Bash(Get-ChildItem -Depth:*)", "Bash(# Check if electron directory exists\nTest-Path electron; Test-Path electron\\main.cjs; Test-Path src)", "Bash(# 确认 WSL 中有 electron 目录\nwsl ls -la /home/sam/digital_human/digital-human-terminal/electron/)", "Bash(# 复制 electron 目录及其内容\nwsl cp -r /home/sam/digital_human/digital-human-terminal/electron /mnt/c/projects/avatar/)", "Bash(# 验证\nTest-Path electron\\main.cjs)", "Bash(# 先启动 Vite 开发服务器（后台）\nnpm run dev 2>&1)", "Bash(Start-Sleep -Seconds 5; bash_output bash-1)", "Bash(npx electron --version 2>&1)", "Bash(npx electron . 2>&1)", "kill_shell", "Edit", "Bash(npx tsc --noEmit 2>&1)", "Bash(npx tsc --noEmit 2>&1 && npm run build 2>&1)", "Bash(npx tsc --noEmit 2>&1 && if ($?) { npm run build 2>&1 })", "explore", "Bash(Select-String -Path src/App.css -Pattern \"^/\\*\" | Select-Object -Last 5)", "Bash(cd C:\\projects\\avatar && npx tsc --noEmit --pretty 2>&1 | Select-Object -First 20)", "Bash(cd C:\\projects\\avatar; npx tsc --noEmit --pretty 2>&1 | Select-Object -First 20)", "Bash(cd C:\\projects\\avatar; npx vite build 2>&1 | Select-Object -Last 20)", "Bash(python --version 2>&1; pip --version 2>&1)", "Bash(pip install edge-tts 2>&1)", "Bash(pip install edge-tts -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn 2>&1)", "Bash($edgeTts = \"$env:USERPROFILE\\AppData\\Roaming\\Python\\Python314\\Scripts\\edge-tts.exe\"\n\n# 试听 1: Xiaoxiao (温暖女声，最推荐)\n& $edgeTts --voice zh-CN-XiaoxiaoNeural --text \"你好，我是你的数字人助手，很高兴认识你。今天天气真不错，有什么我可以帮你的吗？\" --write-media \"test_xiaoxiao.mp3\"\n\nWrite-Host \"=== 已生成: test_xiaoxiao.mp3 ===\"\n\n# 试听 2: Yunxi (阳光男声)\n& $edgeTts --voice zh-CN-YunxiNeural --text \"你好，我是你的数字人助手，很高兴认识你。今天天气真不错，有什么我可以帮你的吗？\" --write-media \"test_yunxi.mp3\"\n\nWrite-Host \"=== 已生成: test_yunxi.mp3 ===\"\n\n# 试听 3: Xiaoyi (活泼女声，适合卡通风格)\n& $edgeTts --voice zh-CN-XiaoyiNeural --text \"嗨！我是你的小助手，今天想聊点什么呢？\" --write-media \"test_xiaoyi.mp3\"\n\nWrite-Host \"=== 已生成: test_xiaoyi.mp3 ===\"\n\n# 试听 4: Yunyang (新闻男声，专业)\n& $edgeTts --voice zh-CN-YunyangNeural --text \"欢迎使用数字人语音助手，我们将为您提供最优质的服务。\" --write-media \"test_yunyang.mp3\"\n\nWrite-Host \"=== 已生成: test_yunyang.mp3 ===\"\n\n# 列出文件\nGet-ChildItem test_*.mp3 | Select-Object Name, Length)", "Bash($edgeTts = \"$env:USERPROFILE\\AppData\\Roaming\\Python\\Python314\\Scripts\\edge-tts.exe\"\n\n# 一段更长更自然的对话文本，听听真实效果\n$text = @\"\n你好，欢迎使用数字人语音助手。我是基于微软神经网络语音合成的，支持多种中文语音风格。无论你是想要温暖亲切的交流，还是专业高效的对话，我都可以为你提供帮助。现在，让我为你朗读一段文字，展示一下我的音质效果。\n\"@\n\n# Xiaoxiao 女声 - 带情感风格（小说风格，更自然）\n& $edgeTts --voice zh-CN-XiaoxiaoNeural --text $text --write-media \"test_xiaoxiao_long.mp3\"\n\n# Yunxi 男声\n& $edgeTts --voice zh-CN-YunxiNeural --text $text --write-media \"test_yunxi_long.mp3\"\n\n# 试试 Emma Multilingual（英文多语言语音，也能说中文）\n& $edgeTts --voice en-US-EmmaMultilingualNeural --text \"Hello, I'm your digital assistant. 我也可以说中文，虽然带一点点英文口音。\" --write-media \"test_emma.mp3\"\n\nGet-ChildItem test_*.mp3 | Select-Object Name, Length)", "Bash($edgeTts = \"$env:USERPROFILE\\AppData\\Roaming\\Python\\Python314\\Scripts\\edge-tts.exe\"\n\n$text = \"你好，我是你的數字人助手，很開心認識你。今天天氣真好，有什麼我可以幫你的嗎？\"\n\n# 台湾女生 HsiaoChen\n& $edgeTts --voice zh-TW-HsiaoChenNeural --text $text --write-media \"test_hsiaochen.mp3\"\nWrite-Host \"=== 已生成: test_hsiaochen.mp3（台湾国语 - HsiaoChen）===\"\n\n# 台湾女生 HsiaoYu\n& $edgeTts --voice zh-TW-HsiaoYuNeural --text $text --write-media \"test_hsiaoyu.mp3\"\nWrite-Host \"=== 已生成: test_hsiaoyu.mp3（台湾国语 - HsiaoYu）===\"\n\nGet-ChildItem test_hsiao*.mp3 | Select-Object Name, Length)", "Bash((Get-Item test_xiaoxiao.mp3).FullName | Split-Path -Parent)", "Bash(# 卸载 edge-tts\npip uninstall edge-tts -y 2>&1\n\nWrite-Host \"\"\n\n# 删除试听文件\nRemove-Item test_xiaoxiao.mp3, test_xiaoxiao_long.mp3, test_yunxi.mp3, test_yunxi_long.mp3, test_xiaoyi.mp3, test_yunyang.mp3, test_emma.mp3, test_hsiaochen.mp3, test_hsiaoyu.mp3 -ErrorAction SilentlyContinue\n\nWrite-Host \"=== 清理完成 ===\"\nGet-ChildItem test_*.mp3 -ErrorAction SilentlyContinue\nif ($?) { Write-Host \"所有试听文件已删除。\" })", "Bash(pip search voicebox 2>$null\npip index versions voicebox 2>$null\n# Try to see if there's a voicebox package\npip install voicebox --dry-run 2>&1)"]
+
+
+[[providers]]
+name        = "deepseek-flash"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+model       = "deepseek-v4-flash"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"
+context_window = 1000000
+price       = { cache_hit = 0.02, input = 1, output = 2, currency = "¥" }
+
+[[providers]]
+name        = "deepseek-pro"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+model       = "deepseek-v4-pro"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"
+context_window = 1000000
+price       = { cache_hit = 0.025, input = 3, output = 6, currency = "¥" }
+
+[[providers]]
+name        = "deepseek"
+kind        = "openai"
+base_url    = "https://api.deepseek.com"
+models      = ["deepseek-v4-flash", "deepseek-v4-pro"]
+default     = "deepseek-v4-flash"
+api_key_env = "DEEPSEEK_API_KEY"
+balance_url = "https://api.deepseek.com/user/balance"
+context_window = 1000000
+price       = { cache_hit = 0.02, input = 1, output = 2, currency = "¥" }
+prices      = { "deepseek-v4-flash" = { cache_hit = 0.02, input = 1, output = 2, currency = "¥" }, "deepseek-v4-pro" = { cache_hit = 0.025, input = 3, output = 6, currency = "¥" } }
